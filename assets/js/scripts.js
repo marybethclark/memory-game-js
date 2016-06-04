@@ -10,27 +10,43 @@ setInterval(function() {
 var clickCounter = 0;
 $(".cardunflipped").on("click",function(){
   clickCounter++
+
    if (clickCounter === 1){
   $(this).addClass("cardflipped");
 }
-  else if(clickCounter === 2 && $(this).attr("value")===$(".cardflipped").attr("value")){
+// isn't this ".cardflipped" in the line below referring to card #2, which doesn't yet HAVE a class of .cardflipped?
+
+// I need to have jquery look at a card that is clicked twice, so that it doesn't think it's a match with itself.
+else if (clickCounter === 2 && $(this).attr("id")===$("id")){
+  $(".cardflipped").addClass("cardunflipped");
+  $(this).removeClass("cardflipped");
+  console.log("same card clicked twice");
+  clickCounter=0
+
+}
+
+  else if(clickCounter === 2 && $(this).attr("id")===$(".cardflipped").attr("value")){
   $(this).addClass("cardflipped");
   $(this).addClass("match");
   $(".cardflipped").addClass("match");
   $(".match").removeClass("cardflipped");
   clickCounter=0;
 }
-// ---need to add  .setTimeout or .setInterval here, so there will be a pause before un-matched cards turn back over -------
-else if (clickCounter===2 && $(this).attr("value")!==$(".cardflipped").attr("value")){
+
+  else if (clickCounter===2 && $(this).attr("value")!==$(".cardflipped").attr("value")){
   $(this).addClass("cardflipped");
   $(".cardflipped").addClass("cardunflipped");
 
+// Below are my afforts at adding  .setTimeout or .setInterval, so there will be a pause before un-matched cards turn back over -------
+  // var pause;
+  // function delay(){
+  //   pause = setTimeout(1000);
+  // }
 
   $(".cardunflipped").removeClass("cardflipped");
   clickCounter=0;
 
-}
-})
+}});
 
 
 // (function () {
