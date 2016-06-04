@@ -1,0 +1,78 @@
+.wrapper{
+  width:1045px;
+  /*height: 1200px;*/
+  /*wrapper height was pushing the cards to bottom of page*/
+  margin: auto;
+  /*position: relative;*/
+  background:#3f51b5;
+  display: block;
+}
+
+#lightbulb-title{
+  color: white;
+  font-family: orbitron, sans-serif;
+  font-size: 4em;
+  /*margin-left: 400px;
+  margin-right: 300px;*/
+  position: relative;
+  left:350px;
+}
+
+/*.heart-timer-line{
+  display: inline-block;
+}*/
+
+#hearts {
+color: white;
+}
+
+/*#statictimer{
+  color: white;
+  font-family: sans-serif;
+  position: relative;
+  left:950px;
+}*/
+/*--------  ABOVE THE GAME BOARD -------------------*/
+.cardunflipped{
+  width:14%;
+  height:16.66%;
+  background:#7986cb;
+  border: red;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 2em;
+  color:#7986cb;
+  line-height: 200px;
+  display: inline-block;
+  margin: .2px;
+  transition: background .5s, transform .5s;
+  /*line above used to only be in .cardflipped*/
+}
+.cardflipped{
+  /*width:14%;
+  height:16.66%;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 2em;
+  line-height: 200px;
+
+  margin: .2px;*/
+  transition: background .5s, transform .5s;
+  background: #7986cb;
+  transform: rotateY(180deg);
+  color:white;
+  display: inline-block;
+}
+
+.match{
+  width:14%;
+  height:16.66%;
+  background:#7986cb;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 2em;
+  color:white;
+  line-height: 200px;
+  display: inline-block;
+  margin: .2px;
+}
