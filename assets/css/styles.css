@@ -22,7 +22,8 @@
   display: inline-block;
 }*/
 
-#hearts {
+/*--------------- lives reamining hearts ---------------*/
+.hearts {
 color: white;
 }
 
@@ -32,7 +33,11 @@ color: white;
   position: relative;
   left:950px;
 }*/
-/*--------  ABOVE THE GAME BOARD -------------------*/
+/*--------   THE GAME BOARD is below-------------------*/
+/*.fa-heart:before {
+    content: "\f004";
+}*/
+
 .cardunflipped{
   width:14%;
   height:16.66%;
@@ -58,7 +63,7 @@ color: white;
   transition: background .5s, transform .5s;
   background: #7986cb;
   transform: rotateY(180deg);
-  color:white !important;
+  color:white;
   display: inline-block;
 }
 
