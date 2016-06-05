@@ -1,11 +1,17 @@
-.wrapper{
-  width:1045px;
-  /*height: 1200px;*/
+.wholepage{
+margin: 1em 1em 1em 1em;
+  border: 4px solid red;
+}
+
+.abovegame{
+  /*width:1045px;
+  height: 1200px;*/
   /*wrapper height was pushing the cards to bottom of page*/
-  margin: auto;
+  /*margin: auto;*/
+/*margin: 1em 1em 1em 1em;*/
   /*position: relative;*/
   background:#3f51b5;
-  display: block;
+  /*display: block;*/
 }
 
 #lightbulb-title{
@@ -21,6 +27,14 @@
 /*.heart-timer-line{
   display: inline-block;
 }*/
+
+.cardspace{
+  /*margin: auto;*/
+/*margin: 1em 1em 1em 1em;*/
+  /*position: relative;*/
+  /*background:#3f51b5;*/
+  /*display: block;*/
+}
 
 /*--------------- lives reamining hearts ---------------*/
 .hearts {
@@ -64,7 +78,7 @@ color: white;
   background: #7986cb;
   transform: rotateY(180deg);
   color:white;
-  display: inline-block;
+  /*display: inline-block;*/
 }
 
 .match{
