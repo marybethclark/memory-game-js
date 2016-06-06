@@ -1,6 +1,7 @@
 .wholepage{
-margin: 1em 1em 1em 1em;
+  /*margin: 1em 1em 1em 1em;*/
   border: 4px solid red;
+  background:#3f51b5;
 }
 
 .abovegame{
@@ -20,8 +21,52 @@ margin: 1em 1em 1em 1em;
   font-size: 4em;
   /*margin-left: 400px;
   margin-right: 300px;*/
+  margin-left: auto;
+  margin-right: auto;
   position: relative;
   left:350px;
+}
+
+#newgame{
+  color: white;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 50px;
+  font-size: 2em;
+  font-family: orbitron,sans-serif;
+}
+
+#easy{
+  color: white;
+  text-align: center;
+    line-height: 50px;
+  font-size: 1em;
+  font-family: orbitron,sans-serif;
+  width: 307px;
+  height: 50px;
+  /*display: block;*/
+  margin-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px solid white;
+  transform: perspective(220px)   rotateY(-15deg);
+
+}
+
+#hard{
+  color: white;
+  text-align: center;
+    line-height: 50px;
+  font-size: 1em;
+  font-family: orbitron,sans-serif;
+  width: 307px;
+  height: 50px;
+  /*display: block;*/
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px solid white;
+  transform: perspective(220px) rotateY(15deg);
 }
 
 /*.heart-timer-line{
@@ -94,3 +139,43 @@ color: white;
   margin: .2px;
   transform: rotateY(180deg);
 }
+
+/*---------- styling for index.html page -----------------------*/
+
+/*#newgame{
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  font-size: 2em;
+  font-family: sans-serif;
+}
+
+#easy{
+  color: white;
+  text-align: center;
+    line-height: 50px;
+  font-size: 1em;
+  font-family: sans-serif;
+  width: 307px;
+  height: 50px;
+  display: block;
+  margin-bottom: 1em;
+  margin-left: 200px;
+  border: 3px solid white;
+  transform: perspective(220px)   rotateY(-15deg);
+
+}
+
+#hard{
+  color: white;
+  text-align: center;
+    line-height: 50px;
+  font-size: 1em;
+  font-family: sans-serif;
+  width: 307px;
+  height: 50px;
+  display: block;
+  margin-left: 250px;
+  border: 3px solid white;
+  transform: perspective(220px) rotateY(15deg);
+}*/
